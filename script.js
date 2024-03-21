@@ -106,11 +106,12 @@ btn1.addEventListener('click',()=>{
     inputUsuario.value = ''
 })
 /*
-Função que é executada quando o botão de favorito é clicado
+nem funtion
 */
 
 const favoritoClicado = (eventoDeClique) => {
     /*adiciona um objeto com a propriedade favorito e não favorito,
+
     e seus valores são os caminhos da imagem*/
     const favoriteState = {
         favorited: 'img/heart-fill.svg',
