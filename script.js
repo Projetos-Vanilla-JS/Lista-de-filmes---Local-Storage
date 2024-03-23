@@ -32,7 +32,14 @@ const filmes = [
      nome: 'A Lagoa Azul',
      genero: 'romance',
      lancamento: 1983
-}]
+    },
+    {
+     id:5,
+     nome: 'Osasco',
+     genero: 'drama',
+     lancamento: 2024
+    }
+    ]
 
 /*
 Criando um array de filmes favoritos
