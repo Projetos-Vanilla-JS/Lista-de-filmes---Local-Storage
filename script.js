@@ -4,34 +4,34 @@ Criando a base de dados de filmes
 
 const filmes = [
     {
-    id: 0,
-    nome: 'Harry Potter',
-    genero: 'fantasia',
-    lancamento: 2001
+        id: 0,
+        nome: 'Harry Potter',
+        genero: 'fantasia',
+        lancamento: 2001
     },
     {
-    id: 1,
-    nome: 'Avatar',
-    genero: 'fantasia',
-    lancamento: 2010
+        id: 1,
+        nome: 'Avatar',
+        genero: 'fantasia',
+        lancamento: 2010
     },
     {
-     id:2,
-     nome:'O senhor dos Anéis',
-     genero: 'fantasia',
-     lancamento: 2000,
+        id:2,
+        nome:'O senhor dos Anéis',
+        genero: 'fantasia',
+        lancamento: 2000,
     },
     {
-     id:3,
-     nome: 'Branquelas',
-     genero: 'comédia',
-     lancamento: 2007
+        id:3,
+        nome: 'Branquelas',
+        genero: 'comédia',
+        lancamento: 2007
     },
     {
-     id:4,
-     nome: 'A Lagoa Azul',
-     genero: 'romance',
-     lancamento: 1983
+        id:4,
+        nome: 'A Lagoa Azul',
+        genero: 'romance',
+        lancamento: 1983
 }]
 
 /*
@@ -122,7 +122,7 @@ const favoritoClicado = (eventoDeClique) => {
         eventoDeClique.target.src = favoriteState.favorited
       } else {
         /* senão, manter a imagem de não favoritado e executar a função de remover
-        do localStorage, passando como parâmetro o id do filme*/
+        do, passando como parâmetro o id do filme*/
         eventoDeClique.target.src = favoriteState.notFavorited
       }
 
