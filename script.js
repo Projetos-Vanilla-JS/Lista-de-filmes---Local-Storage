@@ -70,7 +70,7 @@ const renderizarLista = () =>{
         //adiciona o li à lista de filmes
         listaFilmes.append(itemLista)
         //adiciona o filme que o usuário digitou à lista
-        itemLista.innerHTML = `Meu filme ${filme.nome}`
+        itemLista.innerHTML = `Meu filme: ${filme.nome}`
 
         
         //cria uma nova imagem
@@ -92,18 +92,22 @@ Adiciona o evento de clique ao botão
 */
 
 btn1.addEventListener('click',()=>{
-    //pega o input onde o usuário digita o filme
-    const inputUsuario = document.querySelector('#filmeInput')
-    /*adiciona um id ao filme considerando que o tamanho do array
-    será sempre um a mais que seu index, já que o index começa em 0 */
-    let id = filmes.length
-    //adiciona o valor à propriedade nome do objeto dentro do array filmes
-    filmes.push({id:id,nome: inputUsuario.value, genero: '', lancamento: ''})
-    console.log(filmes)
-    //renderiza a lista novamente
-    renderizarLista()
-    //apaga o campo de digitação
-    inputUsuario.value = ''
+    let inputUsuario = document.querySelector('#filmeInput')
+    if(inputUsuario.value.length <= 0){
+        alert("Precisa adicionar um nome ao filme")
+    } else {
+        //pega o input onde o usuário digita o filme
+        /*adiciona um id ao filme considerando que o tamanho do array
+        será sempre um a mais que seu index, já que o index começa em 0 */
+        let id = filmes.length
+        //adiciona o valor à propriedade nome do objeto dentro do array filmes
+        filmes.push({id:id,nome: inputUsuario.value, genero: '', lancamento: ''})
+        console.log(filmes)
+        //renderiza a lista novamente
+        renderizarLista()
+        //apaga o campo de digitação
+        inputUsuario.value = ''
+    }
 })
 /*
 Função blablabla
